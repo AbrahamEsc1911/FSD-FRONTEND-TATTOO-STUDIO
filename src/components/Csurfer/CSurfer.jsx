@@ -5,9 +5,9 @@ export const CSurfer = ({ content, path }) => {
 
     const navigate = useNavigate()
 
-  return (
-    <>
-        <div onClick={() => navigate(path)}> {content} </div>
-    </>
-  )
+    return (
+        <>
+            <div onClick={() => navigate(path)}> {content} </div>
+        </>
+    )
 }
