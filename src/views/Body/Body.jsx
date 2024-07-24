@@ -9,6 +9,7 @@ export const Body = () => {
     <Routes>
         <Route path='/register' element={<Register />} />
         <Route path='/login' element={<Login />} />
+        <Route path='/profile' element={<Register />} />
     </Routes>
     </>
   )
