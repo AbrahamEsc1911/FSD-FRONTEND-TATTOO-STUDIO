@@ -19,8 +19,8 @@ export const Header = () => {
     return (
         <>
             <div className='Header-root'>
-                    <div className='center-navigation'><CSurfer content="Home" path="/" /></div>
-                    <div className='center-navigation'><CSurfer content="Servicios" path="/" /></div>
+                    <CSurfer content="Home" path="/" />
+                    <CSurfer content="Servicios" path="/" />
                     <Cinput type="button" value="Sing in" onClickFuntion={navRegistro} />
                     <Cinput type="button" value="Log In" onClickFuntion={navLogin} />
             </div>
