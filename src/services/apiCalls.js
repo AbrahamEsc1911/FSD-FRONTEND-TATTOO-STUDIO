@@ -49,16 +49,28 @@ export const getProfile = async (token) => {
 
 export const updateProfile = async (token, data) => {
     
-    console.log(token)
-    console.log(data)
-    const response = await fetch(`${URL}/users/profile`, {
-        method: "PUT",
-        headers: {
-            "Content-type": "application/json",
-            "Authorization": `Bearer ${token}`
-        },
-        body: JSON.stringify(data)
-    })
+    try {
+        const response = await fetch(`${URL}/users/profile`, {
+            method: "PUT",
+            headers: {
+                "Content-type": "application/json",
+                "Authorization": `Bearer ${token}`
+            },
+            body: JSON.stringify(data)
+        })
 
-    return await response.json()
+        const result = await response.json()
+        
+        console.log(result.message)
+
+        // if(!result.success){
+        //     throw new Error(`Error HTTP, info ${result.message} `)
+        // }
+       
+        return result
+
+    } catch (error) {
+        console.error(error)
+    }
+    
 }

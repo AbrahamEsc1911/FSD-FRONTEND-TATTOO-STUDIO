@@ -73,7 +73,8 @@ export const Profile = () => {
                 const dataUpdated = await getProfile(token)
                 setUser(dataUpdated.data)
                 setHidde(false)
-                setErrorUpdate(response.message)
+                setErrorUpdate(result.message)
+                setErrorUpdate("")
             }
 
         } else if (userUpdate.email.length === 0) {
@@ -84,9 +85,10 @@ export const Profile = () => {
                 const dataUpdated = await getProfile(token)
                 setUser(dataUpdated.data)
                 setHidde(false)
+                setErrorUpdate("")
 
             } else {
-                setErrorUpdate(response.message)
+                setErrorUpdate(result.message)
             }
         }
         else {
@@ -96,12 +98,13 @@ export const Profile = () => {
                 const dataUpdated = await getProfile(token)
                 setUser(dataUpdated.data)
                 setHidde(false)
+                setErrorUpdate("")
             } else {
-                setErrorUpdate(response.message)
+                setErrorUpdate(result.message)
+                
             }
         }
     }
-
     return (
         <>
             <h1>Profile</h1>
