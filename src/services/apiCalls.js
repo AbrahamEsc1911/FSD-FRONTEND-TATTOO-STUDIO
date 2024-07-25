@@ -36,9 +36,9 @@ export const getProfile = async (token) => {
 
         const result = await response.json()
 
-        if (!result.success) {
-            throw new Error(`HTTP error, status ${result.status}`)
-        }
+        // if (!result.success) {
+        //     throw new Error(`HTTP error, status ${result.status}`)
+        // }
 
         return result
 
