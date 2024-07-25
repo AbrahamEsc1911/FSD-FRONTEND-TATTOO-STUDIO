@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import { getAllUsers } from '../../services/apiCalls'
+import { deleteUsersById, getAllUsers } from '../../services/apiCalls'
+import { Cinput } from '../../components/Cinput/Cinput'
+import './Admin.css'
 
 export const Admin = () => {
 
     const passport = JSON.parse(localStorage.getItem("passport"))
     let token = null
     if (passport) { token = passport.token }
-
     const [users, setUsers] = useState([])
     const [error, setError] = useState("")
 
@@ -16,6 +17,7 @@ export const Admin = () => {
             const response = await getAllUsers(token)
             if (response.success) {
                 setUsers(response.data)
+                console.log(response.data)
             } else {
                 setError(response.message)
             }
@@ -24,23 +26,35 @@ export const Admin = () => {
 
     }, [])
 
+    const deleteUser = async (e) => {
+        const id = e.target.name
+        const respose = await deleteUsersById(id, token)
+        if(respose.success){
+            const allUsersUpdated = await getAllUsers(token)
+            setUsers(allUsersUpdated.data)
+        } else {
+            alert("No se pudo borrar el usuario, tiene cosas pendientes")
+        }
+    }
+
     return (
         <>
             <h1>Usuarios</h1>
             <div>
-                <div>{error}
-                    {users.length && users.map((user) => {
-                        return (
-                            <div key={user.id}>
-                                <div>{user.name}</div>
-                                <div>{user.email}</div>
-                                <div>{user.is_active}</div>
-                                <div>{user.created_At}</div>
-                            </div>
-                        )
-                    })}
-                </div>
+                {users.length && users.map((user) => {
+                    return (
+                        <div key={user.id}>
+                            <div>{user.name}</div>
+                            <div>{user.email}</div>
+                            <div>{user.is_active}</div>
+                            <div>{user.created_At}</div>
+                            <div>{user.role.name}</div>
+                            <div className={user.role.name === "user" ? "" : "hidde-content"}><Cinput type="button" value="delete" name={user.id} onClickFuntion={deleteUser} /></div>
+                        </div>
+                    )
+                })}
             </div>
+            <div>{error}</div>
         </>
     )
 }

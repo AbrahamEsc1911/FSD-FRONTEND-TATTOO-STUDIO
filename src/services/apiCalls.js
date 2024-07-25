@@ -76,7 +76,6 @@ export const updateProfile = async (token, data) => {
 }
 
 export const getAllUsers = async (token) => {
-    console.log(token)
     try {
         const response = await fetch(`${URL}/users`, {
             method: "GET",
@@ -94,4 +93,17 @@ export const getAllUsers = async (token) => {
     } catch (error) {
         console.error('Error fetching data:', error);
     }
+}
+
+export const deleteUsersById = async (id, token) => {
+    
+    const response = await fetch (`${URL}/users/${id}`, {
+        method: "DELETE",
+        headers: {
+            "Content-type": "application/json",
+            "Authorization": `Bearer ${token}`
+        }
+    })
+
+    return await response.json()
 }
