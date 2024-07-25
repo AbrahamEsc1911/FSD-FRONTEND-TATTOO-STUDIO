@@ -74,3 +74,24 @@ export const updateProfile = async (token, data) => {
     }
     
 }
+
+export const getAllUsers = async (token) => {
+    console.log(token)
+    try {
+        const response = await fetch(`${URL}/users`, {
+            method: "GET",
+            headers: {
+                "Content-type": "aplication/json",
+                "Authorization": `Bearer ${token}`
+            }
+        })
+
+        // if(response.status === 400){
+        //     throw new Error(`status ${response.status} and ${response.message}`)
+        // }
+        return await response.json()
+        
+    } catch (error) {
+        console.error('Error fetching data:', error);
+    }
+}
