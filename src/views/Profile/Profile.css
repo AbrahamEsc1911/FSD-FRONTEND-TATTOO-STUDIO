@@ -1,3 +1,7 @@
 .hidden-content {
     display: none;
 }
+
+.hidden-content-warnig {
+    display: none;
+}

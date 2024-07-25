@@ -24,13 +24,40 @@ export const loginUsers = async (credenials) => {
     return await response.json()
 }
 
-export const getUserProfile = async (token) => {
-    const response = await fetch(`${URL}//users/profile`, {
-        method: "GET",
+export const getProfile = async (token) => {
+    try {
+        const response = await fetch(`${URL}/users/profile`, {
+            method: "GET",
+            headers: {
+                "Content-type": "aplication/json",
+                "Authorization": `Bearer ${token}`
+            }
+        })
+
+        const result = await response.json()
+
+        if (!result.success) {
+            throw new Error(`HTTP error, status ${result.status}`)
+        }
+
+        return result
+
+    } catch (error) {
+        console.error('Error fetching data:', error);
+    }
+}
+
+export const updateProfile = async (token, data) => {
+    
+    console.log(token)
+    console.log(data)
+    const response = await fetch(`${URL}/users/profile`, {
+        method: "PUT",
         headers: {
             "Content-type": "application/json",
             "Authorization": `Bearer ${token}`
-        }
+        },
+        body: JSON.stringify(data)
     })
 
     return await response.json()
