@@ -8,12 +8,17 @@ export const Header = () => {
 
     const navigate = useNavigate()
 
-    const navRegistro = () => {
+    const Registro = () => {
         navigate('/register')
     }
 
-    const navLogin = () => {
+    const Login = () => {
         navigate('/login')
+    }
+
+    const logout = () => {
+        localStorage.removeItem("passport")
+        navigate("/login")
     }
 
     return (
@@ -21,8 +26,10 @@ export const Header = () => {
             <div className='Header-root'>
                     <CSurfer content="Home" path="/" />
                     <CSurfer content="Servicios" path="/" />
-                    <Cinput type="button" value="Sing in" onClickFuntion={navRegistro} />
-                    <Cinput type="button" value="Log In" onClickFuntion={navLogin} />
+                    <CSurfer content="Profile" path="/profile" />
+                    <Cinput type="button" value="Sing In" onClickFuntion={Registro} />
+                    <Cinput type="button" value="Login" onClickFuntion={Login} />
+                    <Cinput type="button" value="Log Out" onClickFuntion={logout} />
             </div>
 
         </>
