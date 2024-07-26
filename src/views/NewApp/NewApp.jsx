@@ -33,9 +33,9 @@ export const NewApp = () => {
     return (
         <>
             <h1>Nueva Cita</h1>
-
+        
             < Cinput type="date" min={today} value={newAppoinment.due_date} name="due_date" emitFuntion={handleEvents} />
-            
+
         </>
     )
 }
