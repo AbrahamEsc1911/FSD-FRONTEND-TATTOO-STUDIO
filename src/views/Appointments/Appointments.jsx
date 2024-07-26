@@ -8,14 +8,14 @@ export const Appointments = () => {
     const passport = JSON.parse(localStorage.getItem("passport"))
     let token = null
     if (passport) { token = passport.token }
-    const navegate = useNavigate()
+    const navigate = useNavigate()
     const [appointments, setAppointments] = useState([])
     const [error, setError] = useState("")
 
     useEffect(() => {
 
         if (!passport) {
-            navegate("/login")
+            navigate("/login")
         }
 
         const allAppoinments = async () => {
