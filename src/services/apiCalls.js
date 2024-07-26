@@ -107,3 +107,14 @@ export const deleteUsersById = async (id, token) => {
 
     return await response.json()
 }
+
+export const getAllArtists = async () => {
+    const response = await fetch(`${URL}/users/artists`, {
+        method: "GET",
+        headers: {
+            "Content-type": "application/json"
+        }
+    })
+
+    return await response.json()
+}
