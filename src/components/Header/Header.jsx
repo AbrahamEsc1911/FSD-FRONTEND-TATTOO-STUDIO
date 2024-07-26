@@ -21,6 +21,10 @@ export const Header = () => {
         navigate("/login")
     }
 
+    const newApp = () => {
+        navigate("/newapp")
+    }
+
     return (
         <>
             <div className='Header-root'>
@@ -31,6 +35,7 @@ export const Header = () => {
                     <CSurfer content="Artists" path="/artists" />
                     <CSurfer content="Appointments" path="/appoinments" />
                     <Cinput type="button" value="Sing In" onClickFuntion={Registro} />
+                    <Cinput type="button" value="Nueva Cita" onClickFuntion={newApp} />
                     <Cinput type="button" value="Login" onClickFuntion={Login} />
                     <Cinput type="button" value="Log Out" onClickFuntion={logout} />
             </div>
