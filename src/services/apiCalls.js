@@ -118,3 +118,16 @@ export const getAllArtists = async () => {
 
     return await response.json()
 }
+
+export const getAllAppoinmentsByI = async (token) => {
+    console.log(token)
+    const response = await fetch(`${URL}/appointments`, {
+        method: "GET",
+        headers: {
+            "Content-type": "application/json",
+            "Authorization": `Beare ${token}`
+        }
+    })
+
+    return await response.json()
+}
