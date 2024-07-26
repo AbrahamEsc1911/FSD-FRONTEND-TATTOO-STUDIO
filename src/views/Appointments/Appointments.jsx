@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { getAllAppoinmentsByI } from '../../services/apiCalls'
+import { Cinput } from '../../components/Cinput/Cinput'
 
 export const Appointments = () => {
 
@@ -43,6 +44,8 @@ export const Appointments = () => {
                             <div>{app.artist.name}</div>
                             <h4>Fecha</h4>
                             <div>{app.due_date}</div>
+                            <Cinput type="button" value="Edit"/>
+                            <Cinput type="button" value="Cancel"/>
                         </div>
                     )
                 })}
