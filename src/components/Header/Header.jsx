@@ -29,6 +29,7 @@ export const Header = () => {
                     <CSurfer content="Perfil" path="/profile" />
                     <CSurfer content="Admin" path="/admin" />
                     <CSurfer content="Artists" path="/artists" />
+                    <CSurfer content="Appointments" path="/appoinments" />
                     <Cinput type="button" value="Sing In" onClickFuntion={Registro} />
                     <Cinput type="button" value="Login" onClickFuntion={Login} />
                     <Cinput type="button" value="Log Out" onClickFuntion={logout} />
