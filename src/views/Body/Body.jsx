@@ -8,6 +8,7 @@ import { Admin } from '../Admin/Admin.jsx'
 import { Artists } from '../Artists/Artists.jsx'
 import { Appointments } from '../Appointments/Appointments.jsx'
 import { NewApp } from '../NewApp/NewApp.jsx'
+import { NotFound } from '../NotFound/NotFound.jsx'
 
 export const Body = () => {
 
@@ -18,6 +19,7 @@ export const Body = () => {
   return (
     <>
       <Routes>
+        <Route path='*' element={<NotFound />}/>
         {!passport && <Route path='/register' element={<Register />} />}
         <Route path='/services' element={<Services />} />
         {role === 3 && <Route path='/admin' element={<Admin />} />}
