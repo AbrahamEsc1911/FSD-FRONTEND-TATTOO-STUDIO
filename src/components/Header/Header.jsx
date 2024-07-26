@@ -6,6 +6,10 @@ import { useNavigate } from 'react-router-dom'
 
 export const Header = () => {
 
+    const passport = JSON.parse(localStorage.getItem("passport"))
+    let role = null
+    if(passport){ role = passport.tokenData.role}
+
     const navigate = useNavigate()
 
     const Registro = () => {
@@ -30,15 +34,15 @@ export const Header = () => {
             <div className='Header-root'>
                     <CSurfer content="Home" path="/" />
                     <CSurfer content="Servicios" path="/services" />
-                    <CSurfer content="Perfil" path="/profile" />
-                    <CSurfer content="Admin" path="/admin" />
+                    {role === 3 && <CSurfer content="Admin" path="/admin" />}
                     <CSurfer content="Artists" path="/artists" />
-                    <CSurfer content="Appointments" path="/appointments" />
-                    <Cinput type="button" value="Sing In" onClickFuntion={Registro} />
-                    <Cinput type="button" value="Nueva Cita" onClickFuntion={newApp} />
-                    <Cinput type="button" value="Login" onClickFuntion={Login} />
-                    <Cinput type="button" value="Log Out" onClickFuntion={logout} />
+                    {passport && <CSurfer content="Perfil" path="/profile" />}
+                    {passport && <CSurfer content="Appointments" path="/appointments" />}
+                    {!passport && <Cinput type="button" value="Sing In" onClickFuntion={Registro} />}
+                    {passport && <Cinput type="button" value="Nueva Cita" onClickFuntion={newApp} /> }
+                    {!passport && <Cinput type="button" value="Login" onClickFuntion={Login} /> }
+                    {passport && <Cinput type="button" value="Log Out" onClickFuntion={logout} />}
             </div>
-        </>
+        </>  
     )
 }

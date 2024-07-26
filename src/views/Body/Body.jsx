@@ -10,18 +10,23 @@ import { Appointments } from '../Appointments/Appointments.jsx'
 import { NewApp } from '../NewApp/NewApp.jsx'
 
 export const Body = () => {
+
+  const passport = JSON.parse(localStorage.getItem("passport"))
+  let role = null
+  if (passport) { role = passport.tokenData.role }
+
   return (
     <>
-    <Routes>
-        <Route path='/register' element={<Register />} />
+      <Routes>
+        {!passport && <Route path='/register' element={<Register />} />}
         <Route path='/services' element={<Services />} />
-        <Route path='/admin' element={<Admin />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/profile' element={<Profile />} />
+        {role === 3 && <Route path='/admin' element={<Admin />} />}
+        {!passport && <Route path='/login' element={<Login />} /> }
+        {passport && <Route path='/profile' element={<Profile />} />}
         <Route path='/artists' element={<Artists />} />
-        <Route path='/appointments' element={<Appointments />} />
-        <Route path='/newapp' element={<NewApp />} />
-    </Routes>
+        {passport && <Route path='/appointments' element={<Appointments />} /> }
+        {passport && <Route path='/newapp' element={<NewApp />} /> }
+      </Routes>
     </>
   )
 }
