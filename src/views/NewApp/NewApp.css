@@ -18,7 +18,7 @@
     height: auto;
 
     padding-top: 10rem;
-    padding-bottom: 9rem;
+    padding-bottom: 5rem;
 
     display: flex;
 }
@@ -34,7 +34,7 @@
     background-color: #0F0F0F;
 
     padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-bottom: 8rem;
 
     display: flex;
     flex-wrap: wrap;
@@ -46,7 +46,6 @@
 #appointment-body-form {
     width: 30vw;
     height: 50vh; 
-
 
     display: flex;
     flex-direction: column;
@@ -149,15 +148,23 @@
     background-color: #3c3c3c;
 }
 
-
-#appointment-body-img {
-    width: 40vw;
-    height: 50vh;
-
-    background-color: orange;
-}
-
 #appointment-warning {
     color: white;
     font-weight: 600;
+
+    margin: 1rem;
+}
+
+#appointment-body-img {
+    width: 30vw;
+    height: 50vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+#app-image {
+    width: 24vw;
+    border-radius: 1rem;
 }

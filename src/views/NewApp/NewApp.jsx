@@ -83,8 +83,9 @@ export const NewApp = () => {
                     <div className={hiddeContent ? "hidden-content" : ""}><Cinput className="app-main-button" type="button" value="Guardar" onClickFuntion={createNewApp} /></div>
                     <div><Cinput className="app-secundary-button" type="button" value={hiddeContent ? "ver citas" : "volver"} onClickFuntion={allAppointments} /></div>
                 </div>
-                <div id='appointment-body-img'></div>
-
+                <div id='appointment-body-img'>
+                    <img src="./images/appointment-img.jpg" alt="appointment-image.tattoo" id='app-image'/>
+                </div>
             </div>
 
 
