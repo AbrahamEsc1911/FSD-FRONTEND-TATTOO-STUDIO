@@ -146,6 +146,7 @@ export const createAppointments = async (token, data) => {
 }
 
 export const deleteApp = async (token, id) => {
+    
     const response = await fetch(`${URL}/appointments/${id}`, {
         method: "DELETE",
         headers: {

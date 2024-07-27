@@ -1,83 +1,10 @@
-.appointments {
-    width: 100vw;
-    height: auto;
-
-    background-color: #0F0F0F;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#appointments-block {
-    width: 75vw;
-    height: auto;
-
-    padding-top: 10rem;
-    padding-bottom: 5rem;
-
-    display: flex;
-    justify-content: center;
-}
-
-.appointments-body {
-    width: 100vw;
-    height: auto;
-
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: #0F0F0F;
-}
-
-.appointments-body-block {
-    width: 75vw;
-    height: auto;
-
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-
-    background-color: #191919;
-    border-radius: 1rem;
-
-    color: gainsboro;
-    font-size: larger;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-#body-block-text {
-    width: 60vw;
-    height: auto;
-
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-
-    display: flex;
-    align-items: center;
-}
-
-/* 
-COMPONENTE */
-
 .body-block-appointment {
     width: 60vw;
     height: auto;
 
-
     padding-top: 1rem;
     padding-bottom: 1rem;
     background-color: #0C0C0C;
-
-    margin-top: 2rem;
-    margin-bottom: 2rem;
 
     display: flex;
     flex-wrap: wrap;
@@ -153,7 +80,7 @@ COMPONENTE */
     align-items: center;
 }
 
-.delete-app-button {
+#delete-app-button {
     width: 7rem;
     height: 2rem;
 

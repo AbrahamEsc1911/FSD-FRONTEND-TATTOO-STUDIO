@@ -56,29 +56,49 @@ export const Appointments = () => {
         <>
             <div className='appointments'>
                 <div id='appointments-block'>
-                    <img src="./images/appoint-tittle.svg" alt="new-appointment" id='appointment-title-image' />
+                    <img src="./images/my-app.svg" alt="new-appointment" id='appointment-title-image' />
+                </div>
+            </div>
+            <div className='appointments-body'>
+                <div className='appointments-body-block'>
+                    <div id='body-block-text'>
+                        <h2>Todas las citas</h2>
+                    </div>
+
+                    <div>
+                        {appointments.length > 0 && appointments.map((app) => {
+                            return (
+                                <div key={app.id}>
+                                    <div className='body-block-appointment'>
+                                        <div id='block-img'>
+                                            <img src="./images/flor.svg" alt="image-service" id='image-block-appointments' />
+                                        </div>
+                                        <div id='block-artist'>
+                                            <p className='title-tex-block-appointments'>Artista</p>
+                                            <h3 className='title-tex-block-appointments'>{app.artist.name}</h3>
+                                        </div>
+                                        <div id='block-service'>
+                                            <p className='title-tex-block-appointments'>Servicio</p>
+                                            <h3 className='title-tex-block-appointments'>{app.service.name}</h3>
+                                        </div>
+                                        <div id='block-date'>
+                                            <p className='title-tex-block-appointments'>Fecha</p>
+                                            <h3 className='title-tex-block-appointments'>{app.due_date}</h3>
+                                        </div>
+                                        <div id='block-button'>
+                                            < Cinput type="button" value="Borrar" className="delete-app-button" name={app.id} onClickFuntion={deleteAppointment} />
+                                        </div>
+                                    </div>
+                                </div>
+                            )
+                        })}
+
+                    </div>
+
                 </div>
             </div>
 
-            
 
-            <h2>Appointments</h2>
-            <div>
-                {appointments.length > 0 && appointments.map((app) => {
-                    return (
-                        <div key={app.id}>
-                            <h2>codigo de cita No.{app.id}</h2>
-                            <h4>Servicio</h4>
-                            <div>{app.service.name}</div>
-                            <h4>Artista</h4>
-                            <div>{app.artist.name}</div>
-                            <h4>Fecha</h4>
-                            <div>{app.due_date}</div>
-                            <Cinput type="button" value="Delete" name={app.id} onClickFuntion={deleteAppointment} />
-                        </div>
-                    )
-                })}
-            </div>
             <div> {errorDelete} </div>
             <div>{error}</div>
         </>
