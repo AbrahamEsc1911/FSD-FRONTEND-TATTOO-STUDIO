@@ -51,7 +51,7 @@
 
 .home-services-section {
     width: 100vw;
-    height: 70vh;
+    height: 80vh;
 
     display: flex;
     justify-content: space-evenly;
@@ -62,9 +62,11 @@
 }
 
 .services-card-space {
-    width: 80vw;
-    height: 50vh;
+    width: 75vw;
+    height: 65vh;
     
+    /* background-color: aquamarine; */
+
     display: flex;
     justify-content: space-evenly;
     align-items: center;
