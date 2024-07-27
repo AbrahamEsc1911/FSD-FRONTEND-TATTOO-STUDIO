@@ -51,13 +51,14 @@ export const Header = () => {
         <>
             <div className='header'>
                 <div id='header-section1'>
+                <img src="./images/logo-blanco.svg" alt="" className='logo'/>
                 </div>
                 {!passport && < div id='header-section2'>
                     <div className='nav-elements'><CSurfer content="Home" path="/home" /></div>
                     <div className='nav-elements'><CSurfer content="Servicios" path="/services" /></div>
                     <div className='nav-elements'><CSurfer content="Artists" path="/artists" /></div>
-                    <div className='nav-elements'>{!passport && <Cinput type="button" value="Sing In" onClickFuntion={Registro} />}</div>
-                    <div className='nav-elements'>{!passport && <Cinput type="button" value="Login" onClickFuntion={Login} />}</div>
+                    <div className='nav-elements'>{!passport && <Cinput type="button" value="Sing In" onClickFuntion={Registro} className="header-button"/>}</div>
+                    <div className='nav-elements'>{!passport && <Cinput type="button" value="Login" onClickFuntion={Login} className="header-button"/>}</div>
                 </div>}
                 {passport && role === 3 && <div id='header-section2'>
                     <div className='nav-elements'><CSurfer content="Home" path="/home" /></div>
@@ -66,8 +67,8 @@ export const Header = () => {
                     <div className='nav-elements'><CSurfer content="Artists" path="/artists" /></div>
                     <div className='nav-elements'><CSurfer content="Perfil" path="/profile" /></div>
                     <div className='nav-elements'><CSurfer content="Appointments" path="/appointments" /></div>
-                    <div className='nav-elements'><Cinput type="button" value="Nueva Cita" onClickFuntion={newApp} /></div>
-                    <div className='nav-elements'><Cinput type="button" value="Log Out" onClickFuntion={logout} /></div>
+                    <div className='nav-elements'><Cinput type="button" value="Nueva Cita" onClickFuntion={newApp} className="header-button"/></div>
+                    <div className='nav-elements'><Cinput type="button" value="Log Out" onClickFuntion={logout} className="header-button"/></div>
                 </div>}
                 {passport && <div id='header-section2'>
                     <div className='nav-elements'><CSurfer content="Home" path="/home" /></div>
@@ -75,8 +76,8 @@ export const Header = () => {
                     <div className='nav-elements'><CSurfer content="Artists" path="/artists" /></div>
                     <div className='nav-elements'><CSurfer content="Perfil" path="/profile" /></div>
                     <div className='nav-elements'><CSurfer content="Appointments" path="/appointments" /></div>
-                    <div className='nav-elements'><Cinput type="button" value="Nueva Cita" onClickFuntion={newApp} /></div>
-                    <div className='nav-elements'><Cinput type="button" value="Log Out" onClickFuntion={logout} /></div>
+                    <div className='nav-elements'><Cinput type="button" value="Nueva Cita" onClickFuntion={newApp} className="header-button"/></div>
+                    <div className='nav-elements'><Cinput type="button" value="Log Out" onClickFuntion={logout} className="header-button"/></div>
                 </div>}
             </div >
         </>

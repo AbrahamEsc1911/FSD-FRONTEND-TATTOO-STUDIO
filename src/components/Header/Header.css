@@ -3,21 +3,24 @@
     width: 100vw;
 
     background-color: rgb(30, 30, 30);
-    color: gainsboro;
+    color: rgb(201, 201, 201);
 
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 #header-section1 {
     height: 15vh;
-    width: 50%;
+    width: 30vw;
     background-color: rgb(30, 30, 30);
+    display: flex;
+    justify-content: center;
 }
 
 #header-section2 {
     height: 15vh;
-    width: 50%;
+    width: 50vw;
     background-color: rgb(30, 30, 30);
     padding-right: 4rem;
 
@@ -27,3 +30,31 @@
     justify-content: space-around;
 }
 
+.header-button {
+    width: 7rem;
+    height: 2rem;
+    border-radius: 0.5em;
+    color: rgb(201, 201, 201);
+
+    cursor: pointer;
+
+    border:  none;
+    background-color: rgb(41, 41, 41);
+}
+
+.header-button:hover {
+    color: #e6dccf;
+    background-color: rgb(21, 21, 21);
+}
+
+.nav-elements:hover {
+    color: rgb(168, 129, 75);
+    cursor: pointer;
+}
+
+.logo {
+    width: 7.5rem;
+    height: 7.5rem;
+
+    cursor: pointer;
+}
