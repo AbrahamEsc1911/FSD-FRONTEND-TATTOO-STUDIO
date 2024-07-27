@@ -9,6 +9,7 @@ import { Artists } from '../Artists/Artists.jsx'
 import { Appointments } from '../Appointments/Appointments.jsx'
 import { NewApp } from '../NewApp/NewApp.jsx'
 import { NotFound } from '../NotFound/NotFound.jsx'
+import { Home } from '../Home/Home.jsx'
 
 export const Body = () => {
 
@@ -20,6 +21,7 @@ export const Body = () => {
     <>
       <Routes>
         <Route path='*' element={<NotFound />} />
+        <Route path='home' element={< Home />} />
         <Route path='/register' element={<Register />} />
         <Route path='/services' element={<Services />} />
         <Route path='/admin' element={<Admin />} />
