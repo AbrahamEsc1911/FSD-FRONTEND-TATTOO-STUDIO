@@ -64,7 +64,6 @@ export const Appointments = () => {
                     <div id='body-block-text'>
                         <h2>Todas las citas</h2>
                     </div>
-
                     <div>
                         {appointments.length > 0 && appointments.map((app) => {
                             return (
@@ -92,15 +91,12 @@ export const Appointments = () => {
                                 </div>
                             )
                         })}
-
+                        <div className='appointments-error-text'> {errorDelete} </div>
+                        <div className='appointments-error-text'>{error}</div>
                     </div>
-
                 </div>
             </div>
 
-
-            <div> {errorDelete} </div>
-            <div>{error}</div>
         </>
     )
 }

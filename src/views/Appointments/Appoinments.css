@@ -62,6 +62,7 @@
 
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 /* 
@@ -172,4 +173,10 @@ COMPONENTE */
 
 #delete-app-button:hover {
     background-color: #746348;
+}
+
+.appointments-error-text {
+    color: white;
+    font-weight: 600;
+    margin: 1rem;
 }
