@@ -1,5 +1,5 @@
 .header {
-    height: 15vh;
+    height: auto;
     width: 100vw;
 
     background-color: rgb(30, 30, 30);
@@ -11,21 +11,28 @@
 }
 
 #header-section1 {
-    height: 15vh;
+    height: auto;
     width: 30%;
-    background-color: rgb(30, 30, 30);
+
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #header-section2 {
-    height: 15vh;
+    height: auto;
     width: 50%;
     background-color: rgb(30, 30, 30);
     padding-right: 4rem;
 
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;

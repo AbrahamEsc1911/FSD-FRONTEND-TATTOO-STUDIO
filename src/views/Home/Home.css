@@ -15,9 +15,13 @@
 
 .home-info-section {
     width: 100vw;
-    height: 60vh;
+    height: auto;
+
+    padding-top: 3rem;
+    padding-bottom: 2rem;
 
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 
@@ -25,8 +29,11 @@
 }
 
 #info-section-1 {
-    width: 30rem;
-    height: 25rem;
+    width: auto;
+    height: auto;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 
     display: flex;
     align-items: center;
@@ -34,11 +41,14 @@
 }
 
 #info-section-2 {
-    width: 30rem;
-    height: 25rem;
+    width:25%;
+    height: auto;
 
     color: white;
     text-align: left;
+
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 
     display: flex;
     align-items: center;
@@ -51,23 +61,24 @@
 
 .home-services-section {
     width: 100vw;
-    height: 80vh;
+    height: auto;
 
+    padding-top: 7rem;
+    padding-bottom: 7rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
 
     background-color: #0C0C0C;
 }
 
 .services-card-space {
-    width: 75vw;
-    height: 65vh;
-    
-    /* background-color: aquamarine; */
+    width: auto;
+    height: auto;
 
     display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
     justify-content: space-evenly;
     align-items: center;
 
