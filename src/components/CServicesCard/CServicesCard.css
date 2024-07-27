@@ -1,7 +1,7 @@
 
 .services-card {
     width: 18rem;
-    height: 27rem;
+    height: 29rem;
 
     background-color: rgb(49, 49, 49);
     border-radius: 0.5rem;
@@ -24,7 +24,7 @@
 
 #services-card-image {
     width: 8rem;
-    height: 10rem;
+    height: 8rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,10 +42,13 @@
 
 #services-card-text {
     width: 11rem;
-    height: 8rem;
+    height: 6.4rem;
 
     color: rgb(195, 195, 195);
+
     display: flex;
     justify-content: center;
     align-items: start;
+    overflow: hidden; 
+    text-overflow: ellipsis;
 }
