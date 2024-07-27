@@ -1,0 +1,54 @@
+.home-main-banner {
+    height: 80vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #0F0F0F;
+}
+
+.image-banner-main {
+    width: 40rem;
+}
+
+.home-info-section {
+    width: 100vw;
+    height: 60vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #0C0C0C;
+}
+
+#info-section-1 {
+    width: 30rem;
+    height: 25rem;
+
+    background-color: #0C0C0C;
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#info-section-2 {
+    width: 30rem;
+    height: 25rem;
+
+    background-color: #0C0C0C;
+
+    color: white;
+    text-align: left;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.image-info-section {
+    width: 30rem;
+}
