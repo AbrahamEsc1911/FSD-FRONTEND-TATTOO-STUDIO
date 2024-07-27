@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { deleteApp, getAllAppoinmentsByI } from '../../services/apiCalls'
 import { Cinput } from '../../components/Cinput/Cinput'
+import './Appoinments.css'
 
 export const Appointments = () => {
 
@@ -52,7 +53,15 @@ export const Appointments = () => {
     }
 
     return (
-        <div>
+        <>
+            <div className='appointments'>
+                <div id='appointments-block'>
+                    <img src="./images/appoint-tittle.svg" alt="new-appointment" id='appointment-title-image' />
+                </div>
+            </div>
+
+            
+
             <h2>Appointments</h2>
             <div>
                 {appointments.length > 0 && appointments.map((app) => {
@@ -72,6 +81,6 @@ export const Appointments = () => {
             </div>
             <div> {errorDelete} </div>
             <div>{error}</div>
-        </div>
+        </>
     )
 }
