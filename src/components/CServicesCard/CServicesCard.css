@@ -10,11 +10,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+}
+
+.services-card:hover {
+    width: 19rem;
+    height: 28rem;
+
+    transition: 500ms;
+
+    cursor: pointer;
 }
 
 #services-card-image {
-    width: 11rem;
-    height: 11rem;
+    width: 8rem;
+    height: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,9 +32,9 @@
 
 #services-card-title {
     width: 11rem;
-    height: 4rem;
+    height: 6rem;
 
-    color: aliceblue;
+    color: #8C7857;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,7 +44,7 @@
     width: 11rem;
     height: 8rem;
 
-    color: aliceblue;
+    color: rgb(195, 195, 195);
     display: flex;
     justify-content: center;
     align-items: start;
