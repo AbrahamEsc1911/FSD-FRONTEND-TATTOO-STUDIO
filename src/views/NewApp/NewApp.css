@@ -1,3 +1,37 @@
 .hidden-content {
     display: none;
 }
+
+.appointment-title{
+    width: 100vw;
+    height: auto;
+
+    background-color: #0F0F0F;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#appointment-title-block {
+    width: 75vw;
+    height: auto;
+
+    padding-top: 10rem;
+    padding-bottom: 9rem;
+
+    display: flex;
+}
+
+#appointment-title-image {
+    width: 25rem;
+}
+
+.appointment-body{
+    width: 100vw;
+    height: 60vh;
+    /* height: auto; */
+
+    background-color: rgb(114, 185, 34);
+
+}

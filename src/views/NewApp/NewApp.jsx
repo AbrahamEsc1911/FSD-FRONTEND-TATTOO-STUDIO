@@ -69,6 +69,13 @@ export const NewApp = () => {
 
     return (
         <>
+            <div className='appointment-title'>
+                <div id='appointment-title-block'>
+                    <img src="./images/appoint-tittle.svg" alt="new-appointment" id='appointment-title-image' />
+                </div>
+            </div>
+            <div className='appointment-body'></div>
+
             <h1>Nueva Cita</h1>
             < Cinput type="date" min={today} value={newAppointment.due_date} name="due_date" emitFuntion={handleEvents} />
             < Cselect name={"services_id"} category="Servicios" options={services} emitFunction={handleEvents} />
