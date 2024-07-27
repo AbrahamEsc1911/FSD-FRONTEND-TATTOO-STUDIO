@@ -21,7 +21,7 @@ export const Body = () => {
     <>
       <Routes>
         <Route path='*' element={<NotFound />} />
-        <Route path='home' element={< Home />} />
+        <Route path='/home' element={< Home />} />
         <Route path='/register' element={<Register />} />
         <Route path='/services' element={<Services />} />
         <Route path='/admin' element={<Admin />} />

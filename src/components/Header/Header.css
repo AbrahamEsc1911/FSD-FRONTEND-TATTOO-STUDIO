@@ -1,11 +1,29 @@
-.Header-root {
+.header {
+    height: 15vh;
     width: 100vw;
-    height: 17vh;
 
-    background-color: black;
-    color: rgb(255, 255, 255);
-    
+    background-color: rgb(30, 30, 30);
+    color: gainsboro;
+
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    flex-direction: row;
 }
+
+#header-section1 {
+    height: 15vh;
+    width: 50%;
+    background-color: rgb(30, 30, 30);
+}
+
+#header-section2 {
+    height: 15vh;
+    width: 50%;
+    background-color: rgb(30, 30, 30);
+    padding-right: 4rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+

@@ -14,7 +14,7 @@ export const Admin = () => {
     const navigate = useNavigate()
 
     useEffect(() => {
-        if (!passport) {
+        if (!passport || passport.tokenData.role !== 3) {
             navigate("*")
         }
 
