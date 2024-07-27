@@ -21,6 +21,7 @@
     padding-bottom: 5rem;
 
     display: flex;
+    justify-content: center;
 }
 
 #appointment-title-image {
@@ -168,3 +169,4 @@
     width: 24vw;
     border-radius: 1rem;
 }
+
