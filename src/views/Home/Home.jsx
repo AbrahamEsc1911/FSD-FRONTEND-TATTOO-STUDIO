@@ -20,7 +20,7 @@ export const Home = () => {
         <div className='services-card-space'>
           <div>< CServicesCard src={"./images/ser-1.svg"} title="Tatuajes del catálogo" description="tatuajes basados en diseños predefinidos en nuestro catálogo" /></div>
           <div>< CServicesCard src={"./images/ser-2.svg"} title="piercings y dilatadores" description="Servicios profesionales para la colocación de piercings y dilatadores" /></div>
-          <div>< CServicesCard src={"./images/ser-3.svg"} title="Restauración y rejuvenecimiento" description="Nuestros expertos trabajan para mejorar y renovar tatuajes antiguos"/></div>
+          <div>< CServicesCard src={"./images/ser-3.svg"} title="Restauración y rejuvenecimiento" description="Nuestros expertos trabajan para mejorar y renovar tatuajes antiguos" /></div>
         </div>
       </div>
     </ >

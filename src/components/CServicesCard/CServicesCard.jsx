@@ -2,11 +2,11 @@ import React from 'react'
 import './CServicesCard.css'
 
 
-export const CServicesCard = ({ src, title, description, value, classname, onClickFuntion }) => {
+export const CServicesCard = ({ src, title, description, onClickFuntion }) => {
 
     return (
         <>
-            <div className='services-card'>
+            <div onClick={onClickFuntion} className='services-card'>
                 <div id='services-card-image'>
                     <img src={src} alt="services1" />
                 </div>
