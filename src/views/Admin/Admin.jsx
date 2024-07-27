@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { deleteUsersById, getAllUsers } from '../../services/apiCalls'
 import { Cinput } from '../../components/Cinput/Cinput'
 import './Admin.css'
+import { useNavigate } from 'react-router-dom'
 
 export const Admin = () => {
 
@@ -10,14 +11,18 @@ export const Admin = () => {
     if (passport) { token = passport.token }
     const [users, setUsers] = useState([])
     const [error, setError] = useState("")
+    const navigate = useNavigate()
 
     useEffect(() => {
+        if (!passport) {
+            navigate("*")
+        }
 
         const brinUsers = async () => {
             const response = await getAllUsers(token)
             if (response.success) {
                 setUsers(response.data)
-                console.log(response.data)
+
             } else {
                 setError(response.message)
             }
@@ -29,7 +34,7 @@ export const Admin = () => {
     const deleteUser = async (e) => {
         const id = e.target.name
         const respose = await deleteUsersById(id, token)
-        if(respose.success){
+        if (respose.success) {
             const allUsersUpdated = await getAllUsers(token)
             setUsers(allUsersUpdated.data)
         } else {

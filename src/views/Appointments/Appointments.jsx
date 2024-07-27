@@ -52,7 +52,7 @@ export const Appointments = () => {
     }
 
     return (
-        <div> 
+        <div>
             <h2>Appointments</h2>
             <div>
                 {appointments.length > 0 && appointments.map((app) => {

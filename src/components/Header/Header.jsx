@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { CSurfer } from '../Csurfer/CSurfer.jsx'
 import './Header.css'
 import { Cinput } from '../Cinput/Cinput.jsx'
@@ -8,9 +8,22 @@ export const Header = () => {
 
     const passport = JSON.parse(localStorage.getItem("passport"))
     let role = null
-    if(passport){ role = passport.tokenData.role}
+    if(passport){role = passport.tokenData.role}
+  
+  
+//   useEffect(() => {
+  
+//     const passportStoraged = JSON.parse(localStorage.getItem("passport"))
+//     if (passportStoraged) { 
+//       setPassport(passportStoraged)
+//       setRole(passportStoraged.tokenData.role)
+//       console.log("tambien la constraseña se dio cuenta del cambio")
+//     }
+  
+//   }, [])
 
     const navigate = useNavigate()
+
 
     const Registro = () => {
         navigate('/register')
@@ -28,6 +41,11 @@ export const Header = () => {
     const newApp = () => {
         navigate("/newapp")
     }
+
+    // useEffect(() => {
+    //   console.log("algo cambio y me di cuenta")
+    // }, [navigate])
+    
 
     return (
         <>

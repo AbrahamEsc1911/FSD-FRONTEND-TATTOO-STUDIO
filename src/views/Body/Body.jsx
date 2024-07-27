@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { Register } from '../Register/Register.jsx'
 import { Login } from '../Login/Login.jsx'
@@ -19,15 +19,15 @@ export const Body = () => {
   return (
     <>
       <Routes>
-        <Route path='*' element={<NotFound />}/>
-        {!passport && <Route path='/register' element={<Register />} />}
+        <Route path='*' element={<NotFound />} />
+        <Route path='/register' element={<Register />} />
         <Route path='/services' element={<Services />} />
-        {role === 3 && <Route path='/admin' element={<Admin />} />}
-        {!passport && <Route path='/login' element={<Login />} /> }
-        {passport && <Route path='/profile' element={<Profile />} />}
+        <Route path='/admin' element={<Admin />} />
+        <Route path='/login' element={<Login />} /> :
+        <Route path='/profile' element={<Profile />} />
         <Route path='/artists' element={<Artists />} />
-        {passport && <Route path='/appointments' element={<Appointments />} /> }
-        {passport && <Route path='/newapp' element={<NewApp />} /> }
+        <Route path='/appointments' element={<Appointments />} />
+        <Route path='/newapp' element={<NewApp />} />
       </Routes>
     </>
   )
