@@ -52,3 +52,14 @@
 .image-info-section {
     width: 30rem;
 }
+
+.home-services-section {
+    width: 100vw;
+    height: 60vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(173, 181, 217);
+}

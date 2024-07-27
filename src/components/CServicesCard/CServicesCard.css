@@ -1,0 +1,41 @@
+
+.services-card {
+    width: 18rem;
+    height: 27rem;
+
+    background-color: rgb(49, 49, 49);
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#services-card-image {
+    width: 11rem;
+    height: 11rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#services-card-title {
+    width: 11rem;
+    height: 4rem;
+
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#services-card-text {
+    width: 11rem;
+    height: 8rem;
+
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
