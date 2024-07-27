@@ -29,9 +29,135 @@
 
 .appointment-body{
     width: 100vw;
-    height: 60vh;
-    /* height: auto; */
+    height: auto;
 
-    background-color: rgb(114, 185, 34);
+    background-color: #0F0F0F;
 
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#appointment-body-form {
+    width: 30vw;
+    height: 50vh; 
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-date {
+    width: 25rem;
+    height: 2.5rem;
+
+    border-radius: 0.8em;
+
+    padding-left: 1rem;
+
+    border: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    cursor: pointer;
+    
+    color: rgb(164, 164, 164);
+    background-color: #282828;
+}
+
+.form-services {
+    width: 26rem;
+    height: 2.5rem;
+
+    border-radius: 0.8em;
+
+    padding-left: 1rem;
+
+    border: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    cursor: pointer;
+    
+    color: rgb(164, 164, 164);
+    background-color: #282828;
+}
+
+.form-artists {
+    width: 26rem;
+    height: 2.5rem;
+
+    border-radius: 0.8em;
+
+    padding-left: 1rem;
+
+    border: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    cursor: pointer;
+    
+    color: rgb(164, 164, 164);
+    background-color: #282828;
+}
+
+.app-main-button {
+    width: 7rem;
+    height: 2rem;
+
+    color: rgb(234, 234, 234);
+
+    font-weight: 500;
+
+    margin: 1rem;
+
+    cursor: pointer;
+
+    border: none;
+    border-radius: 0.2rem;
+    background-color: #8C7857;
+}
+
+.app-main-button:hover {
+    background-color: #746348;
+}
+
+.app-secundary-button {
+    width: 7rem;
+    height: 2rem;
+
+    color: rgb(234, 234, 234);
+
+    font-weight: 500;
+
+    cursor: pointer;
+
+    border: none;
+    border-radius: 0.2rem;
+    background-color: #525252;
+}
+
+.app-secundary-button:hover {
+    background-color: #3c3c3c;
+}
+
+
+#appointment-body-img {
+    width: 40vw;
+    height: 50vh;
+
+    background-color: orange;
+}
+
+#appointment-warning {
+    color: white;
+    font-weight: 600;
 }

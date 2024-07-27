@@ -13,7 +13,7 @@ export const NewApp = () => {
     let token = null
 
     passport ? token = passport.token : navigate("/login")
-    
+
     const [newAppointment, setNewAppointment] = useState(
         {
             services_id: "",
@@ -44,18 +44,18 @@ export const NewApp = () => {
         setNewAppointment({
             ...newAppointment,
             [e.target.name]: e.target.value,
-        }); 
+        });
     };
 
     const createNewApp = async () => {
-        
-        if(newAppointment.services_id.length <= 0 || newAppointment.artists_id.length <= 0 || newAppointment.due_date.length <= 0){
+
+        if (newAppointment.services_id.length <= 0 || newAppointment.artists_id.length <= 0 || newAppointment.due_date.length <= 0) {
             return setMessage('Todos los campos son obligatorios')
         }
 
         setMessage("")
         const response = await createAppointments(token, newAppointment)
-        if(response.success){
+        if (response.success) {
             setHiddeContent(true)
         }
         setMessage(response.message)
@@ -74,16 +74,21 @@ export const NewApp = () => {
                     <img src="./images/appoint-tittle.svg" alt="new-appointment" id='appointment-title-image' />
                 </div>
             </div>
-            <div className='appointment-body'></div>
+            <div className='appointment-body'>
+                <div id='appointment-body-form'>
+                    <div>< Cinput className="form-date" type="date" min={today} value={newAppointment.due_date} name="due_date" emitFuntion={handleEvents} /></div>
+                    <div>< Cselect className="form-services" name={"services_id"} category="Servicios" options={services} emitFunction={handleEvents} /></div>
+                    <div>< Cselect className="form-artists" name={"artists_id"} category="Artistas" options={artists} emitFunction={handleEvents} /></div>
+                    <div id='appointment-warning'> {message} </div>
+                    <div className={hiddeContent ? "hidden-content" : ""}><Cinput className="app-main-button" type="button" value="Guardar" onClickFuntion={createNewApp} /></div>
+                    <div><Cinput className="app-secundary-button" type="button" value={hiddeContent ? "ver citas" : "volver"} onClickFuntion={allAppointments} /></div>
+                </div>
+                <div id='appointment-body-img'></div>
 
-            <h1>Nueva Cita</h1>
-            < Cinput type="date" min={today} value={newAppointment.due_date} name="due_date" emitFuntion={handleEvents} />
-            < Cselect name={"services_id"} category="Servicios" options={services} emitFunction={handleEvents} />
-            < Cselect name={"artists_id"} category="Artistas" options={artists} emitFunction={handleEvents} />
-            <div className={hiddeContent ? "hidden-content" : ""}><Cinput type="button" value="Guardar" onClickFuntion={createNewApp}/></div> 
-            <div><Cinput type="button" value={hiddeContent ? "ver citas" : "volver"} onClickFuntion={allAppointments}/></div> 
-            <div> {message} </div>
-            
+            </div>
+
+
+
         </>
     )
 }
