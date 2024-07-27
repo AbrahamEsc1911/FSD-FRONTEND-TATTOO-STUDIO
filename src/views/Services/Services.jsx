@@ -36,7 +36,16 @@ export const Services = () => {
                 </div>
             </div>
             <div className='services-text-image'>
-
+                <div className='services-text-image-block'>
+                    <div id='services-tex'>
+                        <p>
+                            Es mucho más que un estudio de tatuaje y piercing. Valencia es una ciudad abierta, cosmopolita y vanguardista, y nosotros vamos a aportar nuestro grano de arena al movimiento de la ciudad través del tattoo, piercing, exposiciones y eventos en nuestro estudio.
+                        </p>
+                    </div>
+                    <div id='services-image'>
+                        <img src="./images/flor.svg" alt="flor" />
+                    </div>
+                </div>
             </div>
         </>
     )
