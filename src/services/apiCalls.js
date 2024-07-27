@@ -144,3 +144,17 @@ export const createAppointments = async (token, data) => {
 
     return await response.json()
 }
+
+export const deleteApp = async (token, id) => {
+    const response = await fetch(`${URL}/appointments/${id}`, {
+        method: "DELETE",
+        headers: {
+            "Content-type": "application/json",
+            "Authorization": `Beare ${token}`
+        },
+    })
+    console.log(response)
+    return await response.json()
+    
+
+}
