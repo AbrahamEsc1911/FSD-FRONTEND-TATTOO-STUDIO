@@ -32,7 +32,7 @@
     width: 100vw;
     height: auto;
 
-    background-color: #0F0F0F;
+    background-color: #0f0f0f;
 
     padding-top: 3rem;
     padding-bottom: 8rem;
@@ -44,8 +44,25 @@
 
 }
 
+.appoint-body-block{
+    width: 75vw;
+    height: auto;
+
+    background-color:#191919;
+
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 1rem;
+
+}
+
 #appointment-body-form {
-    width: 30vw;
+    width: 25vw;
     height: 50vh; 
 
     display: flex;
@@ -53,6 +70,11 @@
     justify-content: center;
     align-items: center;
 
+}
+
+.text-appointment-crate {
+    color: #746348;
+    font-size: medium;
 }
 
 .form-date {
@@ -157,12 +179,12 @@
 }
 
 #appointment-body-img {
-    width: 30vw;
+    width: 25vw;
     height: 50vh;
 
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
 }
 
 #app-image {

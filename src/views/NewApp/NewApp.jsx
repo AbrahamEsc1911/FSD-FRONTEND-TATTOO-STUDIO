@@ -75,17 +75,20 @@ export const NewApp = () => {
                 </div>
             </div>
             <div className='appointment-body'>
-                <div id='appointment-body-form'>
-                    <div>< Cinput className="form-date" type="date" min={today} value={newAppointment.due_date} name="due_date" emitFuntion={handleEvents} /></div>
-                    <div>< Cselect className="form-services" name={"services_id"} category="Servicios" options={services} emitFunction={handleEvents} /></div>
-                    <div>< Cselect className="form-artists" name={"artists_id"} category="Artistas" options={artists} emitFunction={handleEvents} /></div>
-                    <div id='appointment-warning'> {message} </div>
-                    <div className={hiddeContent ? "hidden-content" : ""}><Cinput className="app-main-button" type="button" value="Guardar" onClickFuntion={createNewApp} /></div>
-                    <div><Cinput className="app-secundary-button" type="button" value={hiddeContent ? "ver citas" : "volver"} onClickFuntion={allAppointments} /></div>
-                </div>
-                <div id='appointment-body-img'>
-                    <img src="./images/appointment-img.jpg" alt="appointment-image.tattoo" id='app-image'/>
-                </div>
+                    <div className='appoint-body-block'>
+                        <div id='appointment-body-form'>
+                            <p className='text-appointment-crate'>Agenda una nueva cita con nosotros</p>
+                            <div>< Cinput className="form-date" type="date" min={today} value={newAppointment.due_date} name="due_date" emitFuntion={handleEvents} /></div>
+                            <div>< Cselect className="form-services" name={"services_id"} category="Servicios" options={services} emitFunction={handleEvents} /></div>
+                            <div>< Cselect className="form-artists" name={"artists_id"} category="Artistas" options={artists} emitFunction={handleEvents} /></div>
+                            <div id='appointment-warning'> {message} </div>
+                            <div className={hiddeContent ? "hidden-content" : ""}><Cinput className="app-main-button" type="button" value="Guardar" onClickFuntion={createNewApp} /></div>
+                            <div><Cinput className="app-secundary-button" type="button" value={hiddeContent ? "ver citas" : "volver"} onClickFuntion={allAppointments} /></div>
+                        </div>
+                        <div id='appointment-body-img'>
+                            <img src="./images/appointment-img.jpg" alt="appointment-image.tattoo" id='app-image' />
+                        </div>
+                    </div>
             </div>
 
 
