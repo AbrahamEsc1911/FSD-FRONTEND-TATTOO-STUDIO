@@ -1,3 +1,76 @@
 .hidden-content {
     display: none;
 }
+
+.signup-body {
+    width: 100vw;
+    height: auto;
+
+    background-color: #0F0F0F;
+
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-body-block{
+    width: 75vw;
+    height: auto;
+
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    background-color: #191919;
+    border-radius: 1rem;
+
+    color: gainsboro;
+    font-size: larger;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.classic-input {
+    width: 26rem;
+    height: 2.5rem;
+
+    border-radius: 0.8em;
+
+    padding-left: 1rem;
+
+    border: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    cursor:text;
+    
+    color: rgb(164, 164, 164);
+    background-color: #282828;
+}
+
+.classic-register-button {
+    width: 7rem;
+    height: 2rem;
+
+    color: rgb(234, 234, 234);
+
+    font-weight: 500;
+
+
+    margin-bottom: 2rem;
+
+    cursor: pointer;
+
+    border: none;
+    border-radius: 0.2rem;
+    background-color: #8C7857;
+}
+
+.classic-register-button:hover {
+    background-color: #746348;
+}
