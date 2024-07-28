@@ -55,6 +55,22 @@
     background-color: rgb(21, 21, 21);
 }
 
+.header-button-login {
+    width: 7rem;
+    height: 2rem;
+    border-radius: 0.5em;
+    color: rgb(201, 201, 201);
+
+    cursor: pointer;
+
+    border:  none;
+    background-color: #8C7857;
+}
+
+.header-button-login:hover {
+    background-color: #7a684c;
+}
+
 .nav-elements:hover {
     color: #8C7857;
     cursor: pointer;
