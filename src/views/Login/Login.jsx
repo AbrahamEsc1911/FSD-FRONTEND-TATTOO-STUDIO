@@ -4,6 +4,7 @@ import { Cinput } from '../../components/Cinput/Cinput.jsx'
 import { loginUsers } from '../../services/apiCalls.js'
 import { jwtDecode } from 'jwt-decode'
 import { useNavigate } from 'react-router-dom'
+import { CTilte } from '../../components/CTitle/CTilte.jsx'
 
 export const Login = () => {
 
@@ -26,7 +27,6 @@ export const Login = () => {
             }
         ))
     }
-
 
     const login = async () => {
 
@@ -63,13 +63,20 @@ export const Login = () => {
 
     return (
         <>
-            <h1>Login</h1>
-            <div>< Cinput type="email" name="email" placeholder="email" emitFuntion={handleChange} /></div>
-            <div>< Cinput type="password" name="password" placeholder="password" emitFuntion={handleChange} /></div>
-            <p className={hideContent ? "" : "hidden-content"}>El correo y la contraseña son obligatorios</p>
-            <p className={passwordLenght ? "" : "hidden-content"}>la contraseña debe ser mayor a 8 y menor a 12</p>
-            <p className={backMessage ? "" : "hidden-content"}> {errorLogin} </p>
-            <div>< Cinput type="button" name="password" value="Login" onClickFuntion={login} /></div>
+            <CTilte src={"./images/login.svg"} />
+
+            <div className='login-body'>
+                <div className='login-body-block'>
+                    <p>Ingresa para reservar, actualizar perfil y más</p>
+                    <div>< Cinput className={"classic-input"} type="email" name="email" placeholder="email" emitFuntion={handleChange} /></div>
+                    <div>< Cinput className={"classic-input"} type="password" name="password" placeholder="password" emitFuntion={handleChange} /></div>
+                    <p className={hideContent ? "" : "hidden-content"}>El correo y la contraseña son obligatorios</p>
+                    <p className={passwordLenght ? "" : "hidden-content"}>la contraseña debe ser mayor a 8 y menor a 12</p>
+                    <p className={backMessage ? "" : "hidden-content"}> {errorLogin} </p>
+                    <div>< Cinput className="classic-login-button" type="button" name="password" value="Login" onClickFuntion={login} /></div>
+                </div>
+            </div>
+
         </>
     )
 }
