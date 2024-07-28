@@ -1,3 +1,17 @@
+<details>
+  <summary>Content</summary>
+  <ol>
+    <li><a href="#Objective">Objetive</a></li>
+    <li><a href="#Project-Description">Project Description</a></li>
+    <li><a href="#stack">Stack</a></li>
+    <li><a href="#deploy">Deploy</a></li>
+    <li><a href="#Local-Installation">Local Installation</a></li>
+    <li><a href="#Future-Features">Future Features</a></li>
+    <li><a href="#Contributions">Contributions</a></li>
+    <li><a href="#Contact ">Contact</a></li>
+  </ol>
+</details>
+
 # Tattoo Studio Frontend Project
 
 ## Objective
