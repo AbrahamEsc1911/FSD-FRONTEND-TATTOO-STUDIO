@@ -31,7 +31,6 @@ export const Artists = () => {
 
   return (
     <>
-
     < CTilte src={'./images/artists.svg'} />
       <div className='body-artists-section'>
         {artists.length && artists.map((artist) => {

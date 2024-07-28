@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { deleteApp, getAllAppoinmentsByI } from '../../services/apiCalls'
 import { Cinput } from '../../components/Cinput/Cinput'
 import './Appoinments.css'
+import { CTilte } from '../../components/CTitle/CTilte'
 
 export const Appointments = () => {
 
@@ -54,11 +55,7 @@ export const Appointments = () => {
 
     return (
         <>
-            <div className='appointments'>
-                <div id='appointments-block'>
-                    <img src="./images/my-app.svg" alt="new-appointment" id='appointment-title-image' />
-                </div>
-            </div>
+            <CTilte src={"./images/my-app.svg"} />
             <div className='appointments-body'>
                 <div className='appointments-body-block'>
                     <div id='body-block-text'>

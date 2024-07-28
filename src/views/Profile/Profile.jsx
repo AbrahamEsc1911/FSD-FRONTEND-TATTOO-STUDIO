@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { getProfile, updateProfile } from '../../services/apiCalls'
 import { Cinput } from '../../components/Cinput/Cinput'
 import './Profile.css'
+import { CTilte } from '../../components/CTitle/CTilte'
 
 export const Profile = () => {
 
@@ -107,12 +108,7 @@ export const Profile = () => {
     }
     return (
         <>
-            <div className='profile-title'>
-                <div id='profile-title-block'>
-                    <img src="./images/profile.svg" alt="profile" id='appointment-title-image' />
-                </div>
-            </div>
-
+            <CTilte src={"./images/profile.svg"} />
             <div className='profile-body'>
                 <div className='profile-body-block'>
                     <div id='sides-profile-block-1'>
