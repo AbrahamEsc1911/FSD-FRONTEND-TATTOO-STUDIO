@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { getAllArtists } from '../../services/apiCalls'
+import { CTilte } from '../../components/CTitle/CTilte'
 
 export const Artists = () => {
 
@@ -28,7 +29,8 @@ export const Artists = () => {
 
   return (
     <>
-      <h1>Artistas</h1>
+
+    < CTilte src={'./images/artists.svg'} />
       <div>
         {artists.length && artists.map((artist) => {
           return (

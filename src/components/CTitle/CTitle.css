@@ -1,0 +1,31 @@
+.general-title-page {
+    width: 100vw;
+    height: auto;
+
+    background-color: #0F0F0F;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title-block {
+    width: 75vw;
+    height: auto;
+
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+#profile-picture{
+    width: 18rem;
+    height: auto;
+    border-radius: 1rem;
+}
+
+#title-image {
+    width: 25rem;
+}
