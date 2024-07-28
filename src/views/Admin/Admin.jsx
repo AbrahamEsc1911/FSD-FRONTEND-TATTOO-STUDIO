@@ -3,6 +3,8 @@ import { deleteUsersById, getAllUsers } from '../../services/apiCalls'
 import { Cinput } from '../../components/Cinput/Cinput'
 import './Admin.css'
 import { useNavigate } from 'react-router-dom'
+import { CTilte } from '../../components/CTitle/CTilte'
+import { CUsersCard } from '../../components/CUsersCard/CUsersCard'
 
 export const Admin = () => {
 
@@ -44,17 +46,13 @@ export const Admin = () => {
 
     return (
         <>
+            <CTilte src={"./images/wellcome-admin.svg"} />
             <h1>Usuarios</h1>
             <div>
                 {users.length && users.map((user) => {
                     return (
                         <div key={user.id}>
-                            <div>{user.name}</div>
-                            <div>{user.email}</div>
-                            <div>{user.is_active}</div>
-                            <div>{user.created_At}</div>
-                            <div>{user.role.name}</div>
-                            <div className={user.role.name === "user" ? "" : "hidde-content"}><Cinput type="button" value="delete" name={user.id} onClickFuntion={deleteUser} /></div>
+                            <CUsersCard name={user.name} email={user.email} role={user.role.name} date={user.created_at} userId={user.id} onClickFunction={deleteUser} />
                         </div>
                     )
                 })}

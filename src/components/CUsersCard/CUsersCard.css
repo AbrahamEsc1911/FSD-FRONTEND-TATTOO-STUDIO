@@ -1,0 +1,90 @@
+
+.admin-users-block {
+    width: 60vw;
+    height: 20vh;
+
+    background-color: #0C0C0C;
+    color: rgb(222, 222, 222);
+
+    margin-top: 2rem;
+
+    border-radius: 1rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#admin-user-block-img {
+    width: 13vw;
+    height: 15vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+.admin-user-block-tex {
+    width: 13vw;
+    height: 13vh;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+.admin-user-block-button {
+    width: 13vw;
+    height: 13vh;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+#image-admin-users-block {
+    width: 7rem;
+}
+
+.admin-user-block-title {
+    margin: 0;
+}
+
+.admin-user-block-text{
+    margin: 0;
+}
+
+#button-delete-user {
+    width: 7rem;
+    height: 2rem;
+
+    color: rgb(234, 234, 234);
+
+    font-weight: 500;
+
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+    cursor: pointer;
+
+    border: none;
+    border-radius: 0.2rem;
+    background-color: #8C7857;
+}
