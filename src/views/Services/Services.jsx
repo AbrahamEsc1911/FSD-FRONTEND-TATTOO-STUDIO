@@ -26,7 +26,7 @@ export const Services = () => {
                     {services.length && services.map((service) => {
                         return (
                             <div key={service.id} >
-                                <CServicesCard src={service.id} title={service.name} description={service.description} />
+                                <CServicesCard src={service.image} title={service.name} description={service.description} />
                             </div>
                         )
                     })}
