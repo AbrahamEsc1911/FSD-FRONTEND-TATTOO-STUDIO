@@ -56,3 +56,8 @@
 .classic-login-button:hover {
     background-color: #746348;
 }
+
+#simple-text-login {
+    color: #746348;
+    font-size: medium;
+}

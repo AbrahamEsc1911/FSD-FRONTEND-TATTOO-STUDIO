@@ -61,7 +61,7 @@ export const Register = () => {
       <CTilte src={"./images/signup.svg"} />
       <div className='signup-body'>
         <div className='signup-body-block'>
-          <p>Registrate y accede a todos nuestros servicios</p>
+          <p id='simple-text-register'>Registrate y accede a todos nuestros servicios</p>
           <div><Cinput className="classic-input" type="text" name="email" placeholder="Email (Opcional)" emitFuntion={handleChange} /></div>
           <div><Cinput className="classic-input" type="email" name="email" placeholder="email" emitFuntion={handleChange} /></div>
           <div><Cinput className="classic-input" type="password" name="password" placeholder="password" emitFuntion={handleChange} /></div>

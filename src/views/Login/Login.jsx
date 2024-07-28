@@ -67,7 +67,7 @@ export const Login = () => {
 
             <div className='login-body'>
                 <div className='login-body-block'>
-                    <p>Ingresa para reservar, actualizar perfil y más</p>
+                    <p id='simple-text-login'>Ingresa para reservar, actualizar perfil y más</p>
                     <div>< Cinput className={"classic-input"} type="email" name="email" placeholder="email" emitFuntion={handleChange} /></div>
                     <div>< Cinput className={"classic-input"} type="password" name="password" placeholder="password" emitFuntion={handleChange} /></div>
                     <p className={hideContent ? "" : "hidden-content"}>El correo y la contraseña son obligatorios</p>

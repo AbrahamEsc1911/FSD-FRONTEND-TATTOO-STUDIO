@@ -74,3 +74,8 @@
 .classic-register-button:hover {
     background-color: #746348;
 }
+
+#simple-text-register {
+    color: #746348;
+    font-size: medium;
+}
