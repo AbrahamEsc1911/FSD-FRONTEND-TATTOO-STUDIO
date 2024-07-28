@@ -115,36 +115,25 @@ export const Profile = () => {
 
             <div className='profile-body'>
                 <div className='profile-body-block'>
-                    <div className='sides-profile-block'>
-
+                    <div id='sides-profile-block-1'>
+                        <img src="./images/profile-picture.jpg" alt="profile-picture" id='profile-picture'/>
                     </div>
-                    <div className='sides-profile-block'>
-                        {/* <p className={hidde ? "hidden-content" : ""} id='profile-tittle-text'>nombre</p> */}
+                    <div id='sides-profile-block-2'>
                         <h2 className={hidde ? "hidden-content" : ""} id='profile-main-text'>{user.name} </h2>
-                        <div className={hidde ? "" : "hidden-content"}><Cinput type="text" name="name" placeholder="name" emitFuntion={handleChange} /></div>
+                        <div className={hidde ? "" : "hidden-content"}><Cinput className="edit-input" type="text" name="name" placeholder="name" emitFuntion={handleChange} /></div>
                         <p className={hidde ? "hidden-content" : ""} id='profile-tittle-text'>Correo</p>
                         <h3 className={hidde ? "hidden-content" : ""} id='profile-second-text'>{user.email} </h3>
-                        <div id='line-division-text'></div>
-                        <div className={hidde ? "" : "hidden-content"}><Cinput type="text" name="email" placeholder="email" emitFuntion={handleChange} /></div>
+                        <div className={hidde ? "hidden-content" : ""} id='line-division-text'></div>
+                        <div className={hidde ? "" : "hidden-content"}><Cinput className="edit-input" type="text" name="email" placeholder="email" emitFuntion={handleChange} /></div>
                         <p className={hiddeWarning ? "" : "hidden-content-warnig"}>Rellena al menos uno de los campos para actualizar tus datos</p>
-                        <p> {errorUpdate} </p>
                         <p id='profile-tittle-text'>Con nosotros desde </p>
                         <p id='profile-tittle-text'>{user.created_at} </p>
                         <div className={hidde ? "" : "hidden-content"}>< Cinput className="edit-profile-button" type="button" name="edit" value="guardar" onClickFuntion={updateData} /></div>
                         < Cinput className={hidde ? "cancel-profile-button" : "edit-profile-button"} type="button" name="edit" value={hidde ? "Cancel" : "Edit profile"} onClickFuntion={editButton} />
+                        <p> {errorUpdate} </p>
                     </div>
                 </div>
             </div>
-
-            <p className={hidde ? "hidden-content" : ""}>name {user.name} </p>
-            <div className={hidde ? "" : "hidden-content"}><Cinput type="text" name="name" placeholder="name" emitFuntion={handleChange} /></div>
-            <p className={hidde ? "hidden-content" : ""}>email {user.email} </p>
-            <div className={hidde ? "" : "hidden-content"}><Cinput type="text" name="email" placeholder="email" emitFuntion={handleChange} /></div>
-            <p className={hiddeWarning ? "" : "hidden-content-warnig"}>Rellena al menos uno de los campos para actualizar tus datos</p>
-            <p> {errorUpdate} </p>
-            <p>Con nosotros desde {user.created_at} </p>
-            < Cinput type="button" name="edit" value={hidde ? "cancel" : "edit profile"} onClickFuntion={editButton} />
-            <div className={hidde ? "" : "hidden-content"}>< Cinput type="button" name="edit" value="guardar" onClickFuntion={updateData} /></div>
         </>
     )
 }
