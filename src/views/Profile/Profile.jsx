@@ -101,13 +101,41 @@ export const Profile = () => {
                 setErrorUpdate("")
             } else {
                 setErrorUpdate(result.message)
-                
+
             }
         }
     }
     return (
         <>
-            <h1>Profile</h1>
+            <div className='profile-title'>
+                <div id='profile-title-block'>
+                    <img src="./images/profile.svg" alt="profile" id='appointment-title-image' />
+                </div>
+            </div>
+
+            <div className='profile-body'>
+                <div className='profile-body-block'>
+                    <div className='sides-profile-block'>
+
+                    </div>
+                    <div className='sides-profile-block'>
+                        {/* <p className={hidde ? "hidden-content" : ""} id='profile-tittle-text'>nombre</p> */}
+                        <h2 className={hidde ? "hidden-content" : ""} id='profile-main-text'>{user.name} </h2>
+                        <div className={hidde ? "" : "hidden-content"}><Cinput type="text" name="name" placeholder="name" emitFuntion={handleChange} /></div>
+                        <p className={hidde ? "hidden-content" : ""} id='profile-tittle-text'>Correo</p>
+                        <h3 className={hidde ? "hidden-content" : ""} id='profile-second-text'>{user.email} </h3>
+                        <div id='line-division-text'></div>
+                        <div className={hidde ? "" : "hidden-content"}><Cinput type="text" name="email" placeholder="email" emitFuntion={handleChange} /></div>
+                        <p className={hiddeWarning ? "" : "hidden-content-warnig"}>Rellena al menos uno de los campos para actualizar tus datos</p>
+                        <p> {errorUpdate} </p>
+                        <p id='profile-tittle-text'>Con nosotros desde </p>
+                        <p id='profile-tittle-text'>{user.created_at} </p>
+                        <div className={hidde ? "" : "hidden-content"}>< Cinput className="edit-profile-button" type="button" name="edit" value="guardar" onClickFuntion={updateData} /></div>
+                        < Cinput className={hidde ? "cancel-profile-button" : "edit-profile-button"} type="button" name="edit" value={hidde ? "Cancel" : "Edit profile"} onClickFuntion={editButton} />
+                    </div>
+                </div>
+            </div>
+
             <p className={hidde ? "hidden-content" : ""}>name {user.name} </p>
             <div className={hidde ? "" : "hidden-content"}><Cinput type="text" name="name" placeholder="name" emitFuntion={handleChange} /></div>
             <p className={hidde ? "hidden-content" : ""}>email {user.email} </p>

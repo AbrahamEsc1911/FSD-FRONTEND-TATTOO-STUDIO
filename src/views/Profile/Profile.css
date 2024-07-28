@@ -5,3 +5,137 @@
 .hidden-content-warnig {
     display: none;
 }
+
+.profile-title {
+    width: 100vw;
+    height: auto;
+
+    background-color: #0F0F0F;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile-title-block {
+    width: 75vw;
+    height: auto;
+
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+.profile-body {
+    width: 100vw;
+    height: auto;
+
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #0F0F0F;
+}
+
+.profile-body-block {
+    width: 75vw;
+    height: auto;
+
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    background-color: #191919;
+    border-radius: 1rem;
+
+    color: gainsboro;
+    font-size: larger;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.sides-profile-block {
+    width: 30vw;
+    height: 50vh;
+
+    background-color: blue;
+
+    margin: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+#profile-tittle-text{
+    margin: 0;
+    font-size: medium;
+}
+
+#profile-main-text {
+    font-size: 500;
+    margin-bottom: 0.5rem;
+}
+
+#profile-second-text {
+    font-size: 500;
+    margin: 0;
+}
+
+#line-division-text {
+    width: 15vw;
+    height: 0.2vh;
+
+    margin-top: 1rem;
+
+    background-color: darkgrey;
+}
+
+.edit-profile-button {
+    width: 7rem;
+    height: 2rem;
+
+    color: rgb(234, 234, 234);
+
+    font-weight: 500;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    cursor: pointer;
+
+    border: none;
+    border-radius: 0.2rem;
+    background-color: #8C7857;
+}
+
+.edit-profile-button:hover {
+    background-color: #746348;
+}
+
+.cancel-profile-button {
+    width: 7rem;
+    height: 2rem;
+
+    color: rgb(234, 234, 234);
+
+    font-weight: 500;
+
+    cursor: pointer;
+
+    border: none;
+    border-radius: 0.2rem;
+    background-color: #4c4c4c;
+}
+
+.cancel-profile-button:hover {
+    background-color: #2d2d2d;
+}

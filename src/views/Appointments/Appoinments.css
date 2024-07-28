@@ -171,7 +171,7 @@ COMPONENTE */
     background-color: #8C7857;
 }
 
-#delete-app-button:hover {
+.delete-app-button:hover {
     background-color: #746348;
 }
 
