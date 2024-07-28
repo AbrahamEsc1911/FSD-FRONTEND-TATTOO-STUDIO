@@ -1,7 +1,6 @@
-<details>
-
 !['imagen-main-readme'](./images/main-readme.svg)
 
+<details>
   <summary>Content</summary>
   <ol>
     <li><a href="#Objective">Objetive</a></li>
