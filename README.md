@@ -1,14 +1,17 @@
 <details>
+
+!['imagen-main-readme'](./images/main-readme.svg)
+
   <summary>Content</summary>
   <ol>
     <li><a href="#Objective">Objetive</a></li>
-    <li><a href="#Project-Description">Project Description</a></li>
+    <li><a href="#project-description">Project Description</a></li>
     <li><a href="#stack">Stack</a></li>
     <li><a href="#deploy">Deploy</a></li>
-    <li><a href="#Local-Installation">Local Installation</a></li>
-    <li><a href="#Future-Features">Future Features</a></li>
-    <li><a href="#Contributions">Contributions</a></li>
-    <li><a href="#Contact ">Contact</a></li>
+    <li><a href="#local-installation">Local Installation</a></li>
+    <li><a href="#future-features">Future Features</a></li>
+    <li><a href="#contributions">Contributions</a></li>
+    <li><a href="#contact ">Contact</a></li>
   </ol>
 </details>
 
@@ -57,7 +60,7 @@ Technologies Used
 ## Deploy 
 <div align="left">
     <a href="https://tattoostudio.zeabur.app"><strong>Production URL </strong></a>
-</div>
+</div>![main-readme](undefined)![Uploading main-readme.svg… (fhpuec34g)]()
 
 ## Local Installation
 
