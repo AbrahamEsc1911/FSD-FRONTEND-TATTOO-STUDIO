@@ -121,7 +121,7 @@ export const Profile = () => {
                         <h3 className={hidde ? "hidden-content" : ""} id='profile-second-text'>{user.email} </h3>
                         <div className={hidde ? "hidden-content" : ""} id='line-division-text'></div>
                         <div className={hidde ? "" : "hidden-content"}><Cinput className="edit-input" type="text" name="email" placeholder="email" emitFuntion={handleChange} /></div>
-                        <p className={hiddeWarning ? "" : "hidden-content-warnig"}>Rellena al menos uno de los campos para actualizar tus datos</p>
+                        <p className={hiddeWarning && hidde ? "" : "hidden-content-warnig"}>Rellena al menos uno de los campos para actualizar tus datos</p>
                         <p id='profile-tittle-text'>Con nosotros desde </p>
                         <p id='profile-tittle-text'>{user.created_at} </p>
                         <div className={hidde ? "" : "hidden-content"}>< Cinput className="edit-profile-button" type="button" name="edit" value="guardar" onClickFuntion={updateData} /></div>
