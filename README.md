@@ -91,6 +91,26 @@ To install and run the project locally, follow these steps:
     npm run dev
     ```
 
+## Screenshots
+
+**login**
+!['images-screenshot'](./images/screenshot1.jpg)
+**sign up**
+!['images-screenshot'](./images/screenshot2.jpg)
+**home**
+!['images-screenshot'](./images/screenshot3.jpg)
+**Services**
+!['images-screenshot'](./images/screenshot4.jpg)
+**profile**
+!['images-screenshot'](./images/screenshot5.jpg)
+**nueva cita**
+!['images-screenshot'](./images/screenshot6.jpg)
+**admin panel**
+!['images-screenshot'](./images/screenshot7.jpg)
+**mis citas**
+!['images-screenshot'](./images/screenshot8.jpg)
+
+
 ## Future Features
 
 - Make the design fully responsive.
