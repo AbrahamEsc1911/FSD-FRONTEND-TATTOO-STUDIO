@@ -1,16 +1,19 @@
 .footer{
     width: 100vw;
-    height: 40vh;
+    height: 15vh;
 
-    background-color: rgb(18, 18, 18);
+    background-color:#8C7857;
+
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    margin: 0;
     color: aliceblue;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.footer-navigation {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+#logo-footer {
+    width: 8rem;
 }

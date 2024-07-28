@@ -57,7 +57,7 @@ export const Header = () => {
                     <div className='nav-elements'><CSurfer content="Home" path="/home" /></div>
                     <div className='nav-elements'><CSurfer content="Servicios" path="/services" /></div>
                     <div className='nav-elements'><CSurfer content="Artists" path="/artists" /></div>
-                    <div className='nav-elements'>{!passport && <Cinput type="button" value="Sing In" onClickFuntion={Registro} className="header-button"/>}</div>
+                    <div className='nav-elements'>{!passport && <Cinput type="button" value="Sign Up" onClickFuntion={Registro} className="header-button"/>}</div>
                     <div className='nav-elements'>{!passport && <Cinput type="button" value="Login" onClickFuntion={Login} className="header-button"/>}</div>
                 </div>}
                 {role === 3 && <div id='header-section2'>
