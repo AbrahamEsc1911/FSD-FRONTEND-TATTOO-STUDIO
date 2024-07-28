@@ -1,0 +1,96 @@
+.artists-block {
+    width: 70vw;
+    height: 40vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#artists-image-block {
+    width: 20vw;
+    height: 35vh;
+
+    border-radius: 1rem;
+
+    background-color: bisque;
+
+    position: relative;
+    overflow: hidden;
+}
+
+#artists-image-block img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+#artists-information-block {
+    width: 45vw;
+    height: 35vh;
+
+    border-radius: 1rem;
+
+    background-color: #191919;
+
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+#artists-information-text {
+    width: 28vw;
+    height: 35vh;
+
+    padding-left: 5rem;
+
+    color: aliceblue;
+
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#artists-information-logo {
+    width: 8vw;
+    height: auto;
+
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+
+}
+
+#logo-artists-size {
+    width: 5rem;
+}
+
+.button-artists-reservar {
+    width: 7rem;
+    height: 2rem;
+
+    color: rgb(234, 234, 234);
+
+    font-weight: 500;
+
+    cursor: pointer;
+
+    border: none;
+    border-radius: 0.2rem;
+    background-color: #8C7857;
+}
+
+.button-artists-reservar:hover {
+    background-color: #746348;
+}
+
+#name-artists {
+    margin: 0;
+}
+
+#email-artists {
+    margin: 0;
+    padding-bottom: 1rem;
+}

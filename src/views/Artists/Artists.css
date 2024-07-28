@@ -1,0 +1,14 @@
+.body-artists-section {
+    width: 100vw;
+    height: auto;
+
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    background-color: #0F0F0F;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

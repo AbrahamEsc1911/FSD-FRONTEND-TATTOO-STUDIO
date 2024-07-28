@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { getAllArtists } from '../../services/apiCalls'
 import { CTilte } from '../../components/CTitle/CTilte'
+import './Artists.css'
+import { CArtistsCard } from '../../components/CArtistsCard/CArtistsCard'
 
 export const Artists = () => {
 
@@ -31,14 +33,11 @@ export const Artists = () => {
     <>
 
     < CTilte src={'./images/artists.svg'} />
-      <div>
+      <div className='body-artists-section'>
         {artists.length && artists.map((artist) => {
           return (
             <div key={artist.id}>
-              <div>Name</div>
-              <h1>{artist.name}</h1>
-              <div>Email</div>
-              <div>{artist.email}</div>
+              <CArtistsCard name={artist.name} email={artist.email} />
             </div>
           )
         })
