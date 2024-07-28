@@ -1,3 +1,36 @@
 .hidde-content {
     display: none;
 }
+
+.admin-users-body {
+    width: 100vw;
+    height: auto;
+
+    background-color: #0F0F0F;
+
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-users-body-block {
+    width: 75vw;
+    height: auto;
+
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    background-color: #191919;
+    border-radius: 1rem;
+
+    color: gainsboro;
+    font-size: larger;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}

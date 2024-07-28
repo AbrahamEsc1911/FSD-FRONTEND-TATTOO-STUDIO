@@ -47,17 +47,19 @@ export const Admin = () => {
     return (
         <>
             <CTilte src={"./images/wellcome-admin.svg"} />
-            <h1>Usuarios</h1>
-            <div>
-                {users.length && users.map((user) => {
-                    return (
-                        <div key={user.id}>
-                            <CUsersCard name={user.name} email={user.email} role={user.role.name} date={user.created_at} userId={user.id} onClickFunction={deleteUser} />
-                        </div>
-                    )
-                })}
+            <div className='admin-users-body'>
+                <div className='admin-users-body-block'>
+                    <div>
+                        {users.length && users.map((user) => {
+                            return (
+                                <div key={user.id}>
+                                    <CUsersCard name={user.name} email={user.email} role={user.role.name} date={user.created_at} userId={user.id} onClickFunction={deleteUser} />
+                                </div>)
+                        })}
+                    </div>
+                    <div>{error}</div>
+                </div>
             </div>
-            <div>{error}</div>
         </>
     )
 }
