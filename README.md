@@ -67,7 +67,7 @@ To install and run the project locally, follow these steps:
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/your-username/your-repo.git
+    git clone https://github.com/AbrahamEsc1911/FSD-FRONTEND-TATTOO-STUDIO
     cd your-repo
     ```
 
@@ -82,6 +82,9 @@ To install and run the project locally, follow these steps:
     ```
 
 4. Set up and start the backend server:
+    - Clone the repository:
+      ```sh
+        git clone Backend https://github.com/AbrahamEsc1911/FSD-BACKEND-TATTOO-STUDIO
     - Ensure that the MySQL database is running.
     - Use the CORS library to allow connections between the frontend and backend.
     - Navigate to the backend directory and execute the following commands:
