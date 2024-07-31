@@ -31,7 +31,7 @@
 
 .admin-user-block-tex {
     width: 13vw;
-    height: 13vh;
+    height: 15vh;
 
     text-align: left;
 
@@ -46,7 +46,7 @@
 
 .admin-user-block-button {
     width: 13vw;
-    height: 13vh;
+    height: 15vh;
 
     text-align: left;
 
@@ -60,7 +60,7 @@
 }
 
 #image-admin-users-block {
-    width: 7rem;
+    width: 5rem;
 }
 
 .admin-user-block-title {
@@ -87,4 +87,8 @@
     border: none;
     border-radius: 0.2rem;
     background-color: #8C7857;
+}
+
+#button-delete-user:hover {
+    background-color: #78674b;
 }

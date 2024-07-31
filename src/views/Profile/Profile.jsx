@@ -116,16 +116,16 @@ export const Profile = () => {
                     </div>
                     <div id='sides-profile-block-2'>
                         <h2 className={hidde ? "hidden-content" : ""} id='profile-main-text'>{user.name} </h2>
-                        <div className={hidde ? "" : "hidden-content"}><Cinput className="edit-input" type="text" name="name" placeholder="name" emitFuntion={handleChange} /></div>
+                        <div className={hidde ? "" : "hidden-content"}><Cinput className="edit-input" type="text" name="name" placeholder="Nombre" emitFuntion={handleChange} /></div>
                         <p className={hidde ? "hidden-content" : ""} id='profile-tittle-text'>Correo</p>
                         <h3 className={hidde ? "hidden-content" : ""} id='profile-second-text'>{user.email} </h3>
                         <div className={hidde ? "hidden-content" : ""} id='line-division-text'></div>
-                        <div className={hidde ? "" : "hidden-content"}><Cinput className="edit-input" type="text" name="email" placeholder="email" emitFuntion={handleChange} /></div>
+                        <div className={hidde ? "" : "hidden-content"}><Cinput className="edit-input" type="text" name="email" placeholder="Correo" emitFuntion={handleChange} /></div>
                         <p className={hiddeWarning && hidde ? "" : "hidden-content-warnig"}>Rellena al menos uno de los campos para actualizar tus datos</p>
                         <p id='profile-tittle-text'>Con nosotros desde </p>
                         <p id='profile-tittle-text'>{user.created_at} </p>
                         <div className={hidde ? "" : "hidden-content"}>< Cinput className="edit-profile-button" type="button" name="edit" value="guardar" onClickFuntion={updateData} /></div>
-                        < Cinput className={hidde ? "cancel-profile-button" : "edit-profile-button"} type="button" name="edit" value={hidde ? "Cancel" : "Edit profile"} onClickFuntion={editButton} />
+                        < Cinput className={hidde ? "cancel-profile-button" : "edit-profile-button"} type="button" name="edit" value={hidde ? "Cancelar" : "Editar perfil"} onClickFuntion={editButton} />
                         <p> {errorUpdate} </p>
                     </div>
                 </div>

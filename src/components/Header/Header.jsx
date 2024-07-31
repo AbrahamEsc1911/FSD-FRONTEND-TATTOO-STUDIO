@@ -54,30 +54,30 @@ export const Header = () => {
                 <img src="./images/logo-blanco.svg" alt="" className='logo'/>
                 </div>
                 {!passport && < div id='header-section2'>
-                    <div className='nav-elements'><CSurfer content="Home" path="/home" /></div>
+                    <div className='nav-elements'><CSurfer content="Inicio" path="/" /></div>
                     <div className='nav-elements'><CSurfer content="Servicios" path="/services" /></div>
-                    <div className='nav-elements'><CSurfer content="Artists" path="/artists" /></div>
-                    <div className='nav-elements'>{!passport && <Cinput type="button" value="Sign Up" onClickFuntion={Registro} className="header-button"/>}</div>
-                    <div className='nav-elements'>{!passport && <Cinput type="button" value="Login" onClickFuntion={Login} className="header-button-login"/>}</div>
+                    <div className='nav-elements'><CSurfer content="Artistas" path="/artists" /></div>
+                    <div className='nav-elements'>{!passport && <Cinput type="button" value="Registrarse" onClickFuntion={Registro} className="header-button"/>}</div>
+                    <div className='nav-elements'>{!passport && <Cinput type="button" value="Acceder" onClickFuntion={Login} className="header-button-login"/>}</div>
                 </div>}
                 {role === 3 && <div id='header-section2'>
-                    <div className='nav-elements'><CSurfer content="Home" path="/home" /></div>
+                    <div className='nav-elements'><CSurfer content="Inicio" path="/" /></div>
                     <div className='nav-elements'><CSurfer content="Servicios" path="/services" /></div>
                     <div className='nav-elements'><CSurfer content="Admin" path="/admin" /></div>
-                    <div className='nav-elements'><CSurfer content="Artists" path="/artists" /></div>
+                    <div className='nav-elements'><CSurfer content="Artistas" path="/artists" /></div>
                     <div className='nav-elements'><CSurfer content="Perfil" path="/profile" /></div>
-                    <div className='nav-elements'><CSurfer content="Appointments" path="/appointments" /></div>
+                    <div className='nav-elements'><CSurfer content="Citas" path="/appointments" /></div>
                     <div className='nav-elements'><Cinput type="button" value="Nueva Cita" onClickFuntion={newApp} className="header-button"/></div>
-                    <div className='nav-elements'><Cinput type="button" value="Log Out" onClickFuntion={logout} className="header-button"/></div>
+                    <div className='nav-elements'><Cinput type="button" value="Salir" onClickFuntion={logout} className="header-button"/></div>
                 </div>}
                 {passport && role != 3 &&  <div id='header-section2'>
-                    <div className='nav-elements'><CSurfer content="Home" path="/home" /></div>
+                    <div className='nav-elements'><CSurfer content="Inicio" path="/" /></div>
                     <div className='nav-elements'><CSurfer content="Servicios" path="/services" /></div>
-                    <div className='nav-elements'><CSurfer content="Artists" path="/artists" /></div>
+                    <div className='nav-elements'><CSurfer content="Artistas" path="/artists" /></div>
                     <div className='nav-elements'><CSurfer content="Perfil" path="/profile" /></div>
-                    <div className='nav-elements'><CSurfer content="Appointments" path="/appointments" /></div>
+                    <div className='nav-elements'><CSurfer content="Citas" path="/appointments" /></div>
                     <div className='nav-elements'><Cinput type="button" value="Nueva Cita" onClickFuntion={newApp} className="header-button"/></div>
-                    <div className='nav-elements'><Cinput type="button" value="Log Out" onClickFuntion={logout} className="header-button"/></div>
+                    <div className='nav-elements'><Cinput type="button" value="Salir" onClickFuntion={logout} className="header-button"/></div>
                 </div>}
             </div >
         </>

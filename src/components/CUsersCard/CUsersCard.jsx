@@ -30,7 +30,7 @@ export const CUsersCard = ({name, email, role, date, userId, onClickFunction}) =
                 </div>
                 <div className='admin-user-block-button'>
                     <div>
-                        <input type="button" value="Delete" name={userId} onClick={onClickFunction} id='button-delete-user'/>
+                        <input type="button" value="Borrar" name={userId} onClick={onClickFunction} id='button-delete-user'/>
                     </div>
                 </div>
             </div>

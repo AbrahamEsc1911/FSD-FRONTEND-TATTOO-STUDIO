@@ -12,7 +12,7 @@ export const Footer = () => {
                     <img src="./images/logo-blanco.svg" alt="logo-footer" id='logo-footer' />
                 </div>
                 <div>
-                    <p>All rigths reserved 2024</p>
+                    <p>Todos los derechos reservados</p>
                 </div>
             </div>
 

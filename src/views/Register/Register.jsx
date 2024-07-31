@@ -62,13 +62,13 @@ export const Register = () => {
       <div className='signup-body'>
         <div className='signup-body-block'>
           <p id='simple-text-register'>Registrate y accede a todos nuestros servicios</p>
-          <div><Cinput className="classic-input" type="text" name="email" placeholder="Email (Opcional)" emitFuntion={handleChange} /></div>
-          <div><Cinput className="classic-input" type="email" name="email" placeholder="email" emitFuntion={handleChange} /></div>
-          <div><Cinput className="classic-input" type="password" name="password" placeholder="password" emitFuntion={handleChange} /></div>
+          <div><Cinput className="classic-input" type="text" name="email" placeholder="Nombre (Opcional)" emitFuntion={handleChange} /></div>
+          <div><Cinput className="classic-input" type="email" name="email" placeholder="Correo" emitFuntion={handleChange} /></div>
+          <div><Cinput className="classic-input" type="password" name="password" placeholder="Contraseña" emitFuntion={handleChange} /></div>
           <p className={hideContent ? "" : "hidden-content"}>El correo y la contraseña son obligatorios</p>
           <p className={passwordLenght ? "" : "hidden-content"}>la contraseña debe ser mayor a 8 y menor a 12</p>
           <p >{errorMessage}</p>
-          <div><Cinput className="classic-register-button" type="button" name="register" value="Sign Up" onClickFuntion={register} /></div>
+          <div><Cinput className="classic-register-button" type="button" name="register" value="Registrarse" onClickFuntion={register} /></div>
         </div>
       </div>
 
