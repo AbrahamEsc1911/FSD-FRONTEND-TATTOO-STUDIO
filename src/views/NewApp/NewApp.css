@@ -28,6 +28,7 @@
     padding-bottom: 5rem;
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 
@@ -36,10 +37,13 @@
 }
 
 #appointment-body-form {
-    width: 25vw;
-    height: 50vh; 
+    width: auto;
+    height: auto; 
+
+    margin: 2rem;
 
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -155,6 +159,8 @@
 #appointment-body-img {
     width: 25vw;
     height: 50vh;
+
+    margin: 1rem;
 
     display: flex;
     justify-content: center;
